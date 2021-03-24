@@ -24,6 +24,8 @@ public class JavaBiographyApplication {
             Scanner scanner = new Scanner(System.in);
             Java java = ctx.getBean(Java.class);
 
+            System.out.println("A brief Biography about the Java Programming Language:\n\n");
+
             for (Bulletpoint bp : java.biography()) {
                 System.out.println(bp);
 
